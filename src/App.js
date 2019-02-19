@@ -59,9 +59,7 @@ class App extends Component {
         todoItems: [
           {title: text, status: false },
           ...this.state.todoItems
-        ]
-      })
-      this.setState({
+        ],
         newItem: ''
       })
     }
