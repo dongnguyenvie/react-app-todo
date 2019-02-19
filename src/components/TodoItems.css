@@ -5,12 +5,13 @@
     color: #4d4d4d;
     border-bottom: 1px solid #bebebe;
     padding: 10px 5px;
+    display: flex;
 }
 .TodoItem :last-child {
     border-bottom: none;
 }
 .TodoItem > p {
-    margin: 0;
+    margin: 0 0 0 10px;
 }
 .Todo-Compolete > p{
     text-decoration: line-through;
