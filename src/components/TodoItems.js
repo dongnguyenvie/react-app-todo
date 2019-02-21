@@ -3,6 +3,7 @@ import './TodoItems.css'
 import checkImg from './img/checked.svg'
 import checkComplete from './img/check-complete.svg'
 import classNames from 'classnames'
+import Protypes from 'prop-types'
 
 class TodoItems extends Component{
 
@@ -22,5 +23,12 @@ class TodoItems extends Component{
         );
     }
 };
+
+TodoItems.propTypes = {
+    item: Protypes.shape({
+        status: Protypes.bool
+    }),
+    onClick: Protypes.func
+}
 
 export default TodoItems
